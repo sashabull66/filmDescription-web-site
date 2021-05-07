@@ -4,10 +4,17 @@ body {
     background-color: deepskyblue;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+/*    min-height: 100vh;*/
+}
+
 .header {
+    padding: 10px 0;
     display: flex;
     flex-direction: row;
-    max-height: 10vh;
+/*    max-height: 10vh;*/
     justify-content: space-between;
     background-color: gold;
 }
@@ -17,7 +24,7 @@ body {
 }
 
 .header__icon img {
-    max-height: 100%;
+    max-height: 50px;
 }
 
 .header__profile {
@@ -46,12 +53,13 @@ body {
 }
 
 .main {
+/*    min-height: 90vh;*/
 
 }
 
 .main__sort {
     background-color: yellowgreen;
-    max-height: 6vh;
+/*    max-height: 6vh;*/
     padding: 15px 0;
 }
 
@@ -61,7 +69,7 @@ body {
 }
 
 .main__content {
-    min-height: 60vh;
+/*    min-height: 60vh;*/
     background-color: coral;
     padding: 15px;
     display: grid;
@@ -75,16 +83,37 @@ body {
 }
 
 .content__item {
-    width: 90%;
-    height: 60px;
+    max-width: 90%;
+    height: fit-content;
     background-color: darkslategray;
+}
+
+.poster {
+    width: 100%;
+}
+
+.description {
+    margin: 0;
+    padding: 2px;
+    color: yellow;
+    font-size: 10px;
+
+}
+
+.rating {
+    margin: 0;
+    padding: 2px;
+    color: blueviolet;
+    font-size: 12px;
+
 }
 .main__paginator {
     background-color: blueviolet;
 }
 
 .paginator {
-    min-height: 10vh;
+/*    min-height: 10vh;*/
+    padding: 15px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
