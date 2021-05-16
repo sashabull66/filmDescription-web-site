@@ -8,42 +8,51 @@
   <title>index</title>
 </head>
 <body>
-<div class="wrapper">
-  <header>
-    <div class="header">
-      <div class="header__icon"><a href="index.html"><img src="https://image.flaticon.com/icons/png/512/69/69524.png" alt="main"></a></div>
-      <div class="header__profile">
-        <div class="header__user-name"><span>Sasha</span></div>
-        <div class="header__login-btn"><button type="button" id="login_btn">LogOut</button></div>
+  <div class="wrapper">
+    <header>
+      <div class="header">
+        <div class="header__icon"><a href="index.html"><img src="https://image.flaticon.com/icons/png/512/69/69524.png" alt="main"></a></div>
+        <div class="header__profile">
+          <div class="header__user-name"><span>Sasha</span></div>
+          <div class="header__login-btn"><button type="button" id="login_btn">SignIn/SignUp</button></div>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="main">
-      <div class="main__sort">
-        <select name="" id="">
-          <option value="" selected>none</option>
-          <option value="">по рейтингу (по убыванию)</option>
-          <option value="">по рейтингу (по возрастанию)</option>
-          <option value="">по дате (по убыванию)</option>
-          <option value="">по дате (по возрастанию)</option>
-        </select>
+    </header>
+    <main>
+      <div class="main">
+        <div class="main__sort">
+          <label for="sort">
+            <select id="sort">
+              <option value="none" selected>none</option>
+              <option value="vote_average.desc">по рейтингу (по убыванию)</option>
+              <option value="vote_average.asc">по рейтингу (по возрастанию)</option>
+              <option value="release_date.desc">по дате (по убыванию)</option>
+              <option value="release_date.asc">по дате (по возрастанию)</option>
+            </select>
+          </label>
+        </div>
+        <div class="main__content content">
+
+        </div>
+        <div class="main__paginator paginator">
+          <div id="left"><</div>
+          <div class="paginator__btn" id="page1">1</div>
+          <div class="paginator__btn" id="page2">2</div>
+          <div class="paginator__btn" id="page3">3</div>
+          <div class="paginator__btn" id="page4">4</div>
+          <div class="paginator__btn" id="page5">5</div>
+          <div class="paginator__btn" id="page6">6</div>
+          <div class="paginator__btn" id="page7">7</div>
+          <div class="paginator__btn" id="page8">8</div>
+          <div class="paginator__btn" id="page9">9</div>
+          <div class="paginator__btn" id="page10">10</div>
+          <div id="right">></div>
+        </div>
       </div>
-      <div class="main__content content">
-        <!--for content-->
-      </div>
-      <div class="main__paginator paginator">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-      </div>
-    </div>
-  </main>
-  <footer>
-  </footer>
-</div>
+    </main>
+    <footer>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

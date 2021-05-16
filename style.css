@@ -83,9 +83,24 @@ body {
 }
 
 .content__item {
+    position: relative;
     max-width: 90%;
     height: fit-content;
     background-color: darkslategray;
+    padding: 0 4px;
+}
+
+.content__item:hover > .hover {
+    display: block;
+}
+
+.title {
+    margin: 2px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+
 }
 
 .poster {
@@ -97,16 +112,47 @@ body {
     padding: 2px;
     color: yellow;
     font-size: 10px;
+}
 
+.release_data {
+    margin: 0;
 }
 
 .rating {
     margin: 0;
     padding: 2px;
-    color: blueviolet;
+    color: greenyellow;
     font-size: 12px;
-
 }
+
+.genres {}
+.hover {
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 1.1rem;
+    background-color: darkslategray;
+}
+.popularity {}
+.vote_count{}
+
+.description,
+.hover,
+.genres,
+.popularity,
+.vote_count {
+    display: none;
+}
+
+.modal__window > .description,
+.modal__window >.hover,
+.modal__window >.genres,
+.modal__window >.popularity,
+.modal__window >.vote_count {
+    display: block;
+}
+
+
 .main__paginator {
     background-color: blueviolet;
 }
@@ -130,6 +176,74 @@ body {
     padding: 10px;
 }
 
+.paginator .active {
+    background-color: red;
+    color: white;
+}
+
+.hardHide {
+    position: absolute;
+    left: -300000px;
+    top: -9999999px;
+    display: none;
+}
+
+.modal__wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    z-index: 9000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.modal__window {
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: greenyellow;
+
+}
+
+.modal__window > img {
+    width: 250px;
+}
+
+.modal__window > .hover {
+    background-color: inherit;
+    width: 100%;
+    position: inherit;
+}
+
+.modal__window > .description {
+    font-size: 14px;
+}
+
+
+.login_wnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    height: 450px;
+    padding: 50px;
+}
+
+.login_wnd > * {
+    margin-top: 15px;
+}
+
+.login_wnd > button {
+    width: fit-content;
+}
 
 
 
